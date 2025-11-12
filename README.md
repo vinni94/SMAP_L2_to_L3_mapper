@@ -68,15 +68,15 @@ chmod +x run_SMAP_processing.sh
 ## 🗂️ Output Structure
 
 For each region and year, the script generates processed NetCDF files:
-
-output_root/
+```
+output_root/ 
 └── SMAP_9km_processed/
 ├── SMAP_9km_processed_<REGION><YEAR>.nc # 9 km dataset
 └── SMAP_3km_processed/
 ├── SMAP_3km_processed<REGION><YEAR>01.nc # 3 km monthly datasets
 ├── SMAP_3km_processed<REGION><YEAR>_02.nc
 └── ...
-
+```
 
 Each NetCDF file contains the following variables:
 
