@@ -39,6 +39,31 @@ pandas
 tqdm
 argparse
 ```
+## 🚀 Usage
+
+This script processes SMAP L2 (3 km) and L3 (9 km) soil moisture data for a specified region and year.  
+
+### 1. Prepare the Run Script
+
+Update the `run_smap_pipeline.sh` file with:
+
+- `INPUT_DIR`: Path to the folder containing SMAP HDF5 files.  
+- `OUTPUT_ROOT`: Path where processed NetCDFs will be saved.  
+- `PYTHON_SCRIPT`: Path to the main Python processing script (`process_smap_l2_to_l3.py`).  
+- `LAT_START`, `LAT_END`, `LON_START`, `LON_END`: Latitude/longitude bounds of your region.  
+- `REGION`: Shortname for your region (e.g., `EU`).  
+- `RESOLUTIONS`: List of resolutions to process (`3` for L2, `9` for L3).  
+- `YEARS`: List of years to process.  
+- `EASEGRID_9KM` / `EASEGRID_3KM`: Paths to global EASEgrid latitude/longitude files.  
+
+### 2. Run the Pipeline
+
+Make the script executable and run it:
+
+```bash
+chmod +x run_smap_pipeline.sh
+./run_smap_pipeline.sh
+```
 
 ## 🗂️ Output Structure
 
