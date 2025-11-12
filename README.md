@@ -25,7 +25,7 @@ Clone this repository and install required dependencies:
 git clone https://github.com/vinni94/SMAP_L2_to_L3_mapper.git
 cd SMAP_L2_to_L3_mapper
 pip install -r requirements.txt
-
+```
 
 ## ⚙️ Dependencies
 
@@ -38,7 +38,7 @@ h5py
 pandas
 tqdm
 argparse
-
+```
 
 ## 🗂️ Output Structure
 
