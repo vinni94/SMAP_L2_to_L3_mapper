@@ -61,8 +61,8 @@ Update the `run_smap_pipeline.sh` file with:
 Make the script executable and run it:
 
 ```bash
-chmod +x run_smap_pipeline.sh
-./run_smap_pipeline.sh
+chmod +x run_SMAP_processing.sh
+./run_SMAP_processing.sh
 ```
 
 ## 🗂️ Output Structure
